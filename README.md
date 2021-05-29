@@ -6,9 +6,9 @@ This repository is to create a variety of mediocre AIs that can play against eac
 
 Inspiration came from [this great video](https://www.youtube.com/watch?v=DpXy041BIlA) about mediocre chess AIs.
 
-## Client Repo
+## User Interface
 
-https://github.com/davisharlan/connect-4
+[This repo](https://github.com/davisharlan/connect-4) contains a React UI that interacts with this api.
 
 ## Development
 
