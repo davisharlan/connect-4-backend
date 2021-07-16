@@ -47,7 +47,7 @@ object HTTPServer extends IOApp {
 
   def run(args: List[String]): IO[ExitCode] =
     BlazeServerBuilder[IO]
-      .bindHttp(8081, "localhost")
+      .bindHttp(8081, "0.0.0.0")
       .withHttpApp(corsService)
       .serve
       .compile

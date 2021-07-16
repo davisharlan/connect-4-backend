@@ -2,7 +2,7 @@ name := "connect-4-backend"
 
 version := "0.1"
 
-scalaVersion := "2.13.5"
+scalaVersion := "2.12.14"
 
 // set the main class for packaging the main jar
 mainClass in (Compile, run) := Some("server.HTTPServer")
