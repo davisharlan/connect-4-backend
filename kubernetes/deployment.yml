@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: connect-4-backend-deployment
+  labels:
+    app: connect-4-backend-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: connect-4-backend
+  template:
+    metadata:
+      labels:
+        app: connect-4-backend
+    spec:
+      containers:
+      - name: connect-4-backend
+        image: connect-4/connect-4-backend
+        imagePullPolicy: Never

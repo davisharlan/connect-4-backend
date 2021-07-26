@@ -15,3 +15,25 @@ Inspiration came from [this great video](https://www.youtube.com/watch?v=DpXy041
 To run server locally
 
 ```sbt run```
+
+## Deploy to Kubernetes locally
+
+1. Build the docker image
+
+    ```docker build . -t connect-4/connect-4-backend```
+
+1. Start minikube
+
+    ```minikube start```
+
+1. Create the deployment
+
+    ```kubectl create -f kubernetes/deployment.yml```
+
+1. Create the service 
+
+    ```kubectl create -f kubernetes/service.yml```
+
+1. Port forward one of the pods to your port of choice
+
+    ```kubectl port-forward {POD} {PORT}:8081```
